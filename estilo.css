@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    position: relative;
+    background: #1C2833;
+    height: 100px;
+}
+.navIzq{
+    position: absolute;
+    display: inline-block;
+    left: 100px;
+    
+}
+.navDer{
+    position: absolute;
+    display: inline-block;
+    right: 100px;
+    padding: 40px;
+}
+.cac{
+    display: inline-block;
+    width: 100px;
+    padding: 20px;
+}
+h1{
+    display: inline-block;
+    position: absolute;
+    color: #ffffff;
+    width: 200px;
+    top: 35px;
+}
+.botonConferencia{
+    color: #ffffff;
+    margin: 5px;
+}
+.botonNav{
+    color: #ffffff;
+    opacity: .5;
+    margin: 5px;
+}
+.comprar{
+    color: #28B463;
+    opacity: .5;
+    margin: 5px;
+}
+.contenedorConf{
+    background: rgb(0,0,0,.5);
+    width: 100%;
+    height: 550px;
+    z-index: 100;
+}
+.conferencia{
+    position: relative;
+    background-image: url(./imagenes/ba1.jpg);
+    background-size: contain;
+    width: 100%;
+    height: 550px;
+    z-index: 200;
+}
+.contenidoConf{
+    position: absolute;
+    display: inline-block;
+    color: #ffffff;
+    text-align: right;
+    width: 500px;
+    height: 160px;
+    right: 100px;
+    top: 30%;
+    z-index: 300;
+}
+.botones{
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+} 
+.buttonOrador{
+    background: #56657385;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+}
+.buttonTickets{
+    background: #28B463;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+}
+.oradoresTitulo-1{
+    margin-top: 20px;
+    font-size: 12px;
+    text-align: center;
+    color: #1C2833;
+}
+.oradoresTitulo-2{
+    text-align: center;
+    font-size: 20px;
+}
+.containerOradores{
+    display: flex;
+    justify-content: center;
+}
+.cardOradores{
+    width: 20%;
+    border: 1px solid lightgrey;
+    margin: 15px;
+    margin-bottom: 40px;
+}
+.imgOradores{
+    display: block;
+    margin: auto;
+    width: 270px;
+    height: 270px;
+    margin-bottom: 10px;
+}
+.javaScript{
+    display: inline-block;
+    background: yellow;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 2px;
+    margin-left: 15px;
+    font-weight: bold;
+}
+.react{
+    display: inline-block;
+    background: #6464ff;
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 2px;
+    font-weight: bold;
+}
+.negocios{
+    display: inline-block;
+    background: grey;
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 2px;
+    margin-left: 15px;
+    font-weight: bold;
+}
+.startups{
+    display: inline-block;
+    background: red;
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 2px;
+    font-weight: bold;
+}
+.nombreOrador{
+    font-size: 20px;
+    margin-left: 15px;
+}
+.infoOrador{
+    margin: 20px;
+}
+.octubre{
+    display: flex;
+}
+.imgPlaya{
+    display: block;
+    width: 50%;
+    border: 1px solid grey;
+}
+.infoOctubre{
+    background: #1C2833;
+    border-left: 1px solid white;
+}
+.tituloOctubre{
+    font-size: 30px;
+    color: #ffffff;
+    margin: 20px;
+}
+.infoBa{
+    color: #ffffff;
+    margin: 20px;
+}
+.conoceMas{
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px;
+    margin-top: 50px;
+}
+.conviertete{
+    display: relative;
+}
+.tituloConv-1{
+    margin-top: 20px;
+    font-size: 12px;
+    text-align: center;
+    color: #1C2833;
+}
+.tituloConv-2{
+    text-align: center;
+    font-size: 20px;
+    margin: 5px;
+}
+.infoConviertete{
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+.formConviertete{
+    display: block;
+    text-align: center;
+}
+#inputDatos{
+    display: inline-block;
+    width: 375px;
+    margin: 20px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+#inputTexto{
+    display: block;
+    margin: auto;
+    width: 800px;
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 5px;
+}
+.mensajeForm{
+    display: block;
+    width: 800;
+    margin: 10px 10px 10px 252px;
+    text-align: left;
+}
+#inputEnviar{
+    display: block;
+    margin: auto;
+    width: 850px;
+    height: 40px;
+    color: #ffffff;
+    background: #02a747;
+    margin-bottom: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+footer{
+    background: #08314d;
+    display: flex;
+    justify-content: center;
+}
+footer span{
+    width: 80px;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    margin: 5px;
+}
+.footerSimple{
+    padding-top: 30px;
+}
