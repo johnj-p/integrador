@@ -24,7 +24,7 @@ header{
     display: flex;
     flex-flow: column wrap;
 }
-header > img{
+a > img{
     width: 50px;
 }
 header > h1{
@@ -233,7 +233,7 @@ footer > a{
         align-items: center;
         justify-content: space-around;
     }
-    header > img{
+    a > img{
         width: 70px;
     }
     .invitacion{
