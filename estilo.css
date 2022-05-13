@@ -261,6 +261,7 @@ footer > a{
         height: 500px;
     }
     .info-octubre{
+        padding: 50px;
         align-content: flex-start;
     }
     .usuarioForm{
