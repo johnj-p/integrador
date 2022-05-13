@@ -146,14 +146,14 @@ header > h1{
 }
 .octubre{
     grid-area: octubre;
-    height: 300px;
+    height: 320px;
     border: 1px solid #fff;
     display: flex;
     background-image: url(./imagenes/honolulu.jpg);
     background-size: cover;
 }
 .info-octubre{
-    height: 300px;
+    height: 320px;
     padding: 5px;
     grid-area: info-octubre;
     border: 1px solid #fff; 
