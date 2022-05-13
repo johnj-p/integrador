@@ -212,30 +212,27 @@ footer > a{
             "footer footer footer";
     }
     header, footer{
-        padding: 50px;
+        padding: 20px;
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
     }
     header > img{
-        width: 90px;
+        width: 70px;
     }
     .invitacion{
-        height: 960px;
+        height: 600px;
         background-position: center;
     }
     .invitacion > section{
-        padding: 150px;
+        height: 560px;
     }
     .octubre{
-        height: 700px;
-        padding: 150px;
+        height: 400px;
+        padding: 100px;
     }
     .infoInv{
         width: 45%;
-    }
-    .invitacion > section, .infoOctubre{
-        height: 660px;
     }
     .compBoton{
         flex-direction: row;
@@ -263,6 +260,6 @@ footer > a{
         padding: 10px;
     }
     *{
-        font-size: 25px !important;
+        font-size: 17px !important;
     }
 }
