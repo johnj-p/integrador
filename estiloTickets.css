@@ -23,7 +23,7 @@ header > img{
 a > img{
     width: 50px;
 }
-header > h1{
+a > h1{
     margin: 5px;
     font-size: 15px;
     color: #fff;
