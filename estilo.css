@@ -70,7 +70,7 @@ header > h1{
     text-decoration: none;
     text-align: center;
     color: #F0F3F4;
-    width: 100%;
+    width: 95%;
     border-radius: 4px;
     padding: 5px;
     margin: 4px;
@@ -154,19 +154,22 @@ header > h1{
 }
 .info-octubre{
     height: 300px;
-    padding: 30px;
+    padding: 5px;
     grid-area: info-octubre;
     border: 1px solid #fff; 
     background: #283747;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
+    align-content: center;
+
 }
 .octDescripcion{
     color: #fff;
-    margin: 10px;
+    margin: 5px;
 }
 .conoceMas{
     width: fit-content;
+    height: fit-content;
 }
 .formulario{
     grid-area: formulario;
@@ -256,6 +259,9 @@ footer > a{
     }
     .octubre, .info-octubre{
         height: 500px;
+    }
+    .info-octubre{
+        align-content: flex-start;
     }
     .usuarioForm{
         display: flex;
