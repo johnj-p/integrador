@@ -2,262 +2,267 @@
     margin: 0;
     padding: 0;
 }
-nav{
-    position: relative;
-    background: #1C2833;
-    height: 100px;
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "invitacion"
+        "oradores"
+        "steve-jobs"
+        "bill-gates"
+        "ada-lovelace"
+        "octubre"
+        "formulario"
+        "footer";
 }
-.navIzq{
-    position: absolute;
-    display: inline-block;
-    left: 100px;
-    
+header{
+    padding: 10px;
+    background: #283747;
+    grid-area: header;
+    display: flex;
+    flex-flow: column wrap;
 }
-.navDer{
-    position: absolute;
-    display: inline-block;
-    right: 100px;
-    padding: 40px;
+header > img{
+    width: 50px;
 }
-.cac{
-    display: inline-block;
-    width: 100px;
-    padding: 20px;
-}
-h1{
-    display: inline-block;
-    position: absolute;
-    color: #ffffff;
-    width: 200px;
-    top: 35px;
-}
-.botonConferencia{
-    color: #ffffff;
+header > h1{
     margin: 5px;
+    font-size: 15px;
+    color: #fff;
 }
 .botonNav{
-    color: #ffffff;
-    opacity: .5;
-    margin: 5px;
+    text-decoration: none;
+    color: #fff;
 }
 .comprar{
+    text-decoration: none;
     color: #28B463;
-    opacity: .5;
-    margin: 5px;
 }
-.contenedorConf{
-    background: rgb(0,0,0,.5);
-    width: 100%;
-    height: 550px;
-    z-index: 100;
-}
-.conferencia{
-    position: relative;
+.invitacion{
     background-image: url(./imagenes/ba1.jpg);
     background-size: cover;
-    background-position: 0px -80px;
-    width: 100%;
-    height: 550px;
-    z-index: 200;
+    grid-area: invitacion;
+    height: 300px;
 }
-.contenidoConf{
-    position: absolute;
-    display: inline-block;
-    color: #ffffff;
-    text-align: right;
-    width: 500px;
-    height: 160px;
-    right: 100px;
-    top: 30%;
-    z-index: 300;
-}
-.botones{
-    position: absolute;
-    right: 0;
-    bottom: 0px;
-} 
-.buttonOrador{
-    background: #56657385;
-    border: 1px solid #ffffff;
-    border-radius: 5px;
-    margin: 5px;
-    padding: 10px;
-}
-.buttonTickets{
-    background: #28B463;
-    border: 1px solid #ffffff;
-    border-radius: 5px;
-    margin: 5px;
-    padding: 10px;
-}
-.oradoresTitulo-1{
-    margin-top: 20px;
-    font-size: 12px;
-    text-align: center;
-    color: #1C2833;
-}
-.oradoresTitulo-2{
-    text-align: center;
-    font-size: 20px;
-}
-.containerOradores{
+.invitacion > section{
+    background: rgba(0,0,0,.5);
     display: flex;
+    height: 260px;
+    padding: 20px;
+    flex-flow: column wrap;
+    align-items: flex-end;
     justify-content: center;
 }
-.cardOradores{
-    width: 20%;
+.infoInv{
+    font-size: 15px;
+    margin: 5px;
+    color: #fff;
+    text-align: right;
+}
+.compBoton{
+    display: flex;
+    flex-flow: column wrap;
+}
+.botonIn{
+    border: 1px solid #fff;
+    text-decoration: none;
+    text-align: center;
+    color: #F0F3F4;
+    width: 120px;
+    border-radius: 4px;
+    padding: 5px;
+    margin: 4px;
+}
+.orador{
+    background: #56657385;
+}
+.tickets{
+    background: #1E8449;
+}
+.oradores{
+    grid-area: oradores;
+    padding: 5px;
+}
+.tituloSec{
+    margin: 10px;
+    font-size: 8px;
+    text-align: center;
+}
+.tituloPrim{
+    margin: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+.card{
+    margin: auto;
+    display: flex;
+    flex-flow: column wrap;
     border: 1px solid lightgrey;
-    margin: 15px;
-    margin-bottom: 40px;
+    align-items: center;
+    width: 350px;
 }
 .imgOradores{
-    display: block;
-    margin: auto;
     width: 270px;
     height: 270px;
-    margin-bottom: 10px;
 }
-.javaScript{
+.botonCard{
+    margin: 5px;
+    width: fit-content;
     display: inline-block;
-    background: yellow;
+    color: #ffffff;
     padding: 5px;
     border-radius: 5px;
-    margin: 2px;
-    margin-left: 15px;
+}
+.javaScript{
+    background: yellow;
+    color: #000;
     font-weight: bold;
 }
 .react{
-    display: inline-block;
     background: #6464ff;
-    color: #ffffff;
-    padding: 5px;
-    border-radius: 5px;
-    margin: 2px;
-    font-weight: bold;
 }
 .negocios{
-    display: inline-block;
     background: grey;
-    color: #ffffff;
-    padding: 5px;
-    border-radius: 5px;
-    margin: 2px;
-    margin-left: 15px;
-    font-weight: bold;
 }
 .startups{
-    display: inline-block;
     background: red;
-    color: #ffffff;
-    padding: 5px;
-    border-radius: 5px;
-    margin: 2px;
-    font-weight: bold;
-}
-.nombreOrador{
-    font-size: 20px;
-    margin-left: 15px;
 }
 .infoOrador{
-    margin: 20px;
+    padding: 5px 30px 30px 30px;
+}
+.steve-jobs{
+    grid-area: steve-jobs;
+    margin: 10px;
+}
+.bill-gates{
+    grid-area: bill-gates;
+    margin: 10px;
+}
+.ada-lovelace{
+    grid-area: ada-lovelace;
+    margin: 10px;
 }
 .octubre{
-    display: flex;
-}
-.imgPlaya{
-    display: block;
-    width: 50%;
-    border: 1px solid grey;
+    grid-area: octubre;
+    background-image: url(./imagenes/honolulu.jpg);
+    background-size: cover;
+    height: 300px;
 }
 .infoOctubre{
-    background: #1C2833;
-    border-left: 1px solid white;
-}
-.tituloOctubre{
-    font-size: 30px;
-    color: #ffffff;
-    margin: 20px;
-}
-.infoBa{
-    color: #ffffff;
-    margin: 20px;
-}
-.conoceMas{
-    color: #ffffff;
-    border: 1px solid #ffffff;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 20px;
-    margin-top: 50px;
-}
-.conviertete{
-    display: relative;
-}
-.tituloConv-1{
-    margin-top: 20px;
-    font-size: 12px;
-    text-align: center;
-    color: #1C2833;
-}
-.tituloConv-2{
-    text-align: center;
-    font-size: 20px;
-    margin: 5px;
-}
-.infoConviertete{
-    display: block;
-    margin: auto;
-    text-align: center;
-}
-.formConviertete{
-    display: block;
-    text-align: center;
-}
-#inputDatos{
-    display: inline-block;
-    width: 375px;
-    margin: 20px;
-    padding: 10px;
-    font-size: 15px;
-    border-radius: 5px;
-}
-#inputTexto{
-    display: block;
-    margin: auto;
-    width: 800px;
-    font-size: 20px;
-    padding: 20px;
-    border-radius: 5px;
-}
-.mensajeForm{
-    display: block;
-    width: 800;
-    margin: 10px 10px 10px 252px;
-    text-align: left;
-}
-#inputEnviar{
-    display: block;
-    margin: auto;
-    width: 850px;
-    height: 40px;
-    color: #ffffff;
-    background: #02a747;
-    margin-bottom: 20px;
-    font-weight: bold;
-    border-radius: 5px;
-}
-footer{
-    background: #08314d;
     display: flex;
+    height: 260px;
+    padding: 20px;
+    flex-flow: column wrap;
+    align-items: flex-end;
     justify-content: center;
 }
-footer span{
-    width: 80px;
-    color: #ffffff;
-    padding: 20px;
-    text-align: center;
-    margin: 5px;
+.formulario{
+    grid-area: formulario;
 }
-.footerSimple{
-    padding-top: 30px;
+.formulario > p{
+    padding: 10px;
+    text-align: center;
+}
+.formFormulario{
+    padding: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.usuarioForm{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+.inputDatos{
+    margin: 4px;
+    border: 1px solid #7F8C8D;
+    border-radius: 6px;
+}
+.enviar{
+    color: #fff;
+    background: #3AB330;
+    padding: 2px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #3AB330;
+}
+footer{
+    background: linear-gradient(to right, #154360, #1F618D );
+    grid-area: footer;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 10px;
+}
+footer > a{
+    color: #fff;
+    text-decoration: none;
+}
+
+/* //////////////////////////////////////////////////////// */
+
+@media screen and (min-width: 550px){
+    .grid-container{
+        grid-template-areas: 
+            "header header header"
+            "invitacion invitacion invitacion" 
+            "oradores oradores oradores"
+            "steve-jobs bill-gates ada-lovelace"
+            "octubre octubre octubre"
+            "formulario formulario formulario"           
+            "footer footer footer";
+    }
+    header, footer{
+        padding: 50px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    header > img{
+        width: 90px;
+    }
+    .invitacion{
+        height: 960px;
+        background-position: center;
+    }
+    .invitacion > section{
+        padding: 150px;
+    }
+    .octubre{
+        height: 700px;
+        padding: 150px;
+    }
+    .infoInv{
+        width: 45%;
+    }
+    .invitacion > section, .infoOctubre{
+        height: 660px;
+    }
+    .compBoton{
+        flex-direction: row;
+    }
+    .botonIn{
+        width: fit-content;
+        padding: 10px;
+    }
+    .card{
+        width: 90%;
+    }
+    .usuarioForm{
+        display: flex;
+        flex-direction: row ;
+        margin: 10px;
+    }
+    .inputDatos{
+        width: 29%;
+        margin: 10px;
+        padding: 10px;
+    }
+    .cuadroTexto{
+        width: 59.5%;
+        margin: auto;
+        padding: 10px;
+    }
+    *{
+        font-size: 25px !important;
+    }
 }
