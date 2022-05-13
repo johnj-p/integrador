@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 .grid-container{
     display: grid;
@@ -12,6 +13,7 @@
         "bill-gates"
         "ada-lovelace"
         "octubre"
+        "info-octubre"
         "formulario"
         "footer";
 }
@@ -47,7 +49,7 @@ header > h1{
 .invitacion > section{
     background: rgba(0,0,0,.5);
     display: flex;
-    height: 260px;
+    height: 300px;
     padding: 20px;
     flex-flow: column wrap;
     align-items: flex-end;
@@ -68,7 +70,7 @@ header > h1{
     text-decoration: none;
     text-align: center;
     color: #F0F3F4;
-    width: 120px;
+    width: 100%;
     border-radius: 4px;
     padding: 5px;
     margin: 4px;
@@ -144,20 +146,31 @@ header > h1{
 }
 .octubre{
     grid-area: octubre;
+    height: 300px;
+    border: 1px solid #fff;
+    display: flex;
     background-image: url(./imagenes/honolulu.jpg);
     background-size: cover;
-    height: 300px;
 }
-.infoOctubre{
+.info-octubre{
+    height: 300px;
+    padding: 30px;
+    grid-area: info-octubre;
+    border: 1px solid #fff; 
+    background: #283747;
     display: flex;
-    height: 260px;
-    padding: 20px;
     flex-flow: column wrap;
-    align-items: flex-end;
-    justify-content: center;
+}
+.octDescripcion{
+    color: #fff;
+    margin: 10px;
+}
+.conoceMas{
+    width: fit-content;
 }
 .formulario{
     grid-area: formulario;
+    margin: 10px;
 }
 .formulario > p{
     padding: 10px;
@@ -203,13 +216,13 @@ footer > a{
 @media screen and (min-width: 550px){
     .grid-container{
         grid-template-areas: 
-            "header header header"
-            "invitacion invitacion invitacion" 
-            "oradores oradores oradores"
-            "steve-jobs bill-gates ada-lovelace"
-            "octubre octubre octubre"
-            "formulario formulario formulario"           
-            "footer footer footer";
+            "header header header header header header"
+            "invitacion invitacion invitacion invitacion invitacion invitacion" 
+            "oradores oradores oradores oradores oradores oradores"
+            "steve-jobs steve-jobs bill-gates bill-gates ada-lovelace ada-lovelace"
+            "octubre octubre octubre info-octubre info-octubre info-octubre"
+            "formulario formulario formulario formulario formulario formulario"           
+            "footer footer footer footer footer footer";
     }
     header, footer{
         padding: 20px;
@@ -225,11 +238,8 @@ footer > a{
         background-position: center;
     }
     .invitacion > section{
-        height: 560px;
-    }
-    .octubre{
-        height: 450px;
-        padding: 50px;
+        height: 600px;
+        padding: 100px;
     }
     .infoInv{
         width: 45%;
@@ -243,6 +253,9 @@ footer > a{
     }
     .card{
         width: 90%;
+    }
+    .octubre, .info-octubre{
+        height: 500px;
     }
     .usuarioForm{
         display: flex;
