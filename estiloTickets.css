@@ -20,10 +20,8 @@ header{
 header > img{
     width: 50px;
 }
-header > h1{
-    margin: 5px;
-    font-size: 15px;
-    color: #fff;
+a > img{
+    width: 50px;
 }
 .botonNav{
     text-decoration: none;
@@ -63,7 +61,7 @@ footer > a{
         align-items: center;
         justify-content: space-around;
     }
-    header > img{
+    a > img{
         width: 70px;
     }
 }    
