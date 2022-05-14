@@ -19,13 +19,52 @@
             <a href="./tickets.html" class="comprar">Comprar tickets</a>
         </header>
         <section class="categorias">
-
+            <div class="estudiante">
+                <div>Estudiante</div>
+                <div>Tiene un descuento</div>
+                <div>80%</div>
+                <div>*presentar documentación</div>
+            </div>
+            <div class="trainee">
+                <div>Trainee</div>
+                <div>Tiene un descuento</div>
+                <div>50%</div>
+                <div>*presentar documentación</div>
+            </div>
+            <div class="junior">
+                <div>Junior</div>
+                <div>Tiene un descuento</div>
+                <div>15%</div>
+                <div>*presentar documentación</div>
+            </div>
         </section>
-        <section class="avisoVenta">
-
+        <section class="aviso-venta">
+            <div class="tituloVenta">
+                <h3>VENTA</h3>
+            </div>
+            <div class="valorVenta">
+                <h4>VALOR DE TICKET $200</h4>
+            </div>
         </section>
-        <section class="formVenta">
-
+        <section class="form-venta">
+            <form action="">
+                <input type="text" name="Nombre" placeholder="Nombre">
+                <input type="text" name="Apellido" placeholder="Apellido">
+                <input type="email" name="Correo" placeholder="Correo">
+                <label for="Cantidad">Cantidad</label>
+                <input type="number" name="Cantidad" min="1" placeholder="Cantidad">
+                <label for="Categoria">Categoría</label>
+                <input list="Categorias" name="Categorias">
+                <select id="Categorias" name="Categorias">
+                    <option value="volvo">Estudiante</option>
+                    <option value="saab">Trainee</option>
+                    <option value="fiat">Junior</option>
+                  </select>
+                <!-- Mirar si es el correcto o existe una opcion en form   -->
+                <div class="totalPagar" onclick="precioTotal()"></div>  
+                <input type="reset" name="Borrar" value="Borrar">
+                <input type="button" name="Resumen" value="Resumen">
+            </form>
         </section>
         <footer>
             <a href="">Preguntas frecuentes</a>
