@@ -48,21 +48,28 @@
         </section>
         <section class="opciones form-venta">
             <form action="">
-                <input type="text" name="Nombre" placeholder="Nombre" required class="inputForm nombre">
-                <input type="text" name="Apellido" placeholder="Apellido" required class="inputForm apellido">
-                <input type="email" name="Correo" placeholder="Correo" required class="inputForm correo"> 
-                <label for="Cantidad">Cantidad</label required>
-                <input type="number" name="Cantidad" min="1" placeholder="Cantidad" id="cantidad" required class="inputForm cantidad">
-                <label for="Categoria">Categoría</label>
-                <select name="Categorias" id="categoria" class="inputForm categoria">
-                    <option value="80">Estudiante</option>
-                    <option value="50">Trainee</option>
-                    <option value="15">Junior</option>
-                </select>
-                <!-- Mirar si es el correcto o existe una opcion en form   -->
+                <div class="divForm">
+                    <input type="text" name="Nombre" placeholder="Nombre" required class="">
+                    <input type="text" name="Apellido" placeholder="Apellido" required class="">
+                </div>
+                <input type="email" name="Correo" placeholder="Correo" required class=""> 
+                <div class="divForm">
+                    <label for="Cantidad">Cantidad</label required>
+                    <label for="Categoria">Categoría</label>
+                </div>
+                <div class="divForm">    
+                    <input type="number" name="Cantidad" min="1" placeholder="Cantidad" id="cantidad" required class="">
+                    <select name="Categorias" id="categoria" class="">
+                        <option value="80">Estudiante</option>
+                        <option value="50">Trainee</option>
+                        <option value="15">Junior</option>
+                    </select>
+                </div>
                 <div id="totalPagar"></div>  
-                <input type="reset" name="Borrar" value="Borrar" class="inputForm botonForm borrar">
-                <input type="button" onclick="precioTotal()" name="Resumen" value="Resumen" class="inputForm botonForm resumen">
+                <div class="divForm">
+                    <input type="reset" name="Borrar" value="Borrar" class="">
+                    <input type="button" onclick="precioTotal()" name="Resumen" value="Resumen" class="">
+                </div>
             </form>
         </section>
         <footer>
