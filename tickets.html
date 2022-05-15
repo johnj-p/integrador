@@ -18,27 +18,27 @@
             <a href="" class="botonNav">Conviértete en orador</a>
             <a href="./tickets.html" class="comprar">Comprar tickets</a>
         </header>
-        <section class="categorias">
-            <div class="estudiante">
-                <div>Estudiante</div>
-                <div>Tiene un descuento</div>
-                <div>80%</div>
-                <div>*presentar documentación</div>
+        <section class="opciones categorias">
+            <div class="opcionCat estudiante">
+                <div class="tituloCat">Estudiante</div>
+                <div class="tituloDesc">Tienen un descuento</div>
+                <div class="descuento">80%</div>
+                <div class="documentacion">* presentar documentación</div>
             </div>
-            <div class="trainee">
-                <div>Trainee</div>
-                <div>Tiene un descuento</div>
-                <div>50%</div>
-                <div>*presentar documentación</div>
+            <div class="opcionCat trainee">
+                <div class="tituloCat">Trainee</div>
+                <div class="tituloDesc">Tienen un descuento</div>
+                <div class="descuento">50%</div>
+                <div class="documentacion">* presentar documentación</div>
             </div>
-            <div class="junior">
-                <div>Junior</div>
-                <div>Tiene un descuento</div>
-                <div>15%</div>
-                <div>*presentar documentación</div>
+            <div class="opcionCat junior">
+                <div class="tituloCat">Junior</div>
+                <div class="tituloDesc">Tienen un descuento</div>
+                <div class="descuento">15%</div>
+                <div class="documentacion">* presentar documentación</div>
             </div>
         </section>
-        <section class="aviso-venta">
+        <section class="opciones aviso-venta">
             <div class="tituloVenta">
                 <h3>VENTA</h3>
             </div>
@@ -46,24 +46,24 @@
                 <h4 id="valorTicket"></h4>
             </div>
         </section>
-        <section class="form-venta">
+        <section class="opciones form-venta">
             <form action="">
-                <input type="text" name="Nombre" placeholder="Nombre">
-                <input type="text" name="Apellido" placeholder="Apellido">
-                <input type="email" name="Correo" placeholder="Correo">
-                <label for="Cantidad">Cantidad</label>
-                <input type="number" name="Cantidad" min="1" placeholder="Cantidad" id="cantidad">
+                <input type="text" name="Nombre" placeholder="Nombre" required class="inputForm nombre">
+                <input type="text" name="Apellido" placeholder="Apellido" required class="inputForm apellido">
+                <input type="email" name="Correo" placeholder="Correo" required class="inputForm correo"> 
+                <label for="Cantidad">Cantidad</label required>
+                <input type="number" name="Cantidad" min="1" placeholder="Cantidad" id="cantidad" required class="inputForm cantidad">
                 <label for="Categoria">Categoría</label>
                 <!-- <input list="Categorias" name="Categorias" id="categoria"> -->
-                <select name="Categorias" id="categoria">
+                <select name="Categorias" id="categoria" class="inputForm categoria">
                     <option>Estudiante</option>
                     <option>Trainee</option>
                     <option>Junior</option>
                 </select>
                 <!-- Mirar si es el correcto o existe una opcion en form   -->
                 <div id="totalPagar"></div>  
-                <input type="reset" name="Borrar" value="Borrar">
-                <input type="button" onclick="precioTotal()" name="Resumen" value="Resumen">
+                <input type="reset" name="Borrar" value="Borrar" class="inputForm botonForm borrar">
+                <input type="button" onclick="precioTotal()" name="Resumen" value="Resumen" class="inputForm botonForm resumen">
             </form>
         </section>
         <footer>

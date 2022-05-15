@@ -49,6 +49,68 @@ footer > a{
     color: #fff;
     text-decoration: none;
 }
+.opciones{
+    display: flex;
+    flex-flow: column wrap;
+    margin: 10px;
+    align-content: center;
+}
+.categorias{
+    grid-area: categorias;
+}
+.aviso-venta{
+    grid-area: aviso-venta;
+}
+.form-venta{
+    grid-area: form-venta;
+}
+.opcionCat{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding: 20px;
+    margin: 30px 2px 2px 2px;
+    width: 70%;
+}
+.estudiante{
+    border: 2px solid #1F618D;
+}
+.trainee{
+    border: 2px solid #2E86C1;
+}
+.junior{
+    border: 2px solid #F4D03F;
+}
+.tituloCat{
+    font-weight: bold;
+    margin: 10px;
+    text-align: center;
+}
+.tituloDesc, .documentacion{
+    margin: 10px;
+    text-align: center;
+}
+.descuento{
+    font-weight: bold;
+    text-align: center;
+}
+form{
+    display: flex;
+    margin: 5px;
+    flex-flow: column nowrap;
+    gap: 7px;
+    align-items: center;
+}
+.inputForm{
+    width: 200%;
+    padding: 5px;
+}
+.botonForm{
+    background: #3AB330;
+    color: #fff;
+    border-radius: 5px;
+    border: 1px solid #3AB330;
+}
 
 /* //////////////////////////////////////////////////////// */
 
@@ -73,4 +135,11 @@ footer > a{
     a > img{
         width: 70px;
     }
-}    
+    .categorias{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .opcionCat{
+        width: 20%;
+    }
+} 
