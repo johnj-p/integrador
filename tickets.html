@@ -46,30 +46,38 @@
                 <h4 id="valorTicket"></h4>
             </div>
         </section>
-        <section class="opciones form-venta">
+        <section class="form-venta">
             <form action="">
-                <div class="divForm">
-                    <input type="text" name="Nombre" placeholder="Nombre" required class="">
-                    <input type="text" name="Apellido" placeholder="Apellido" required class="">
-                </div>
-                <input type="email" name="Correo" placeholder="Correo" required class=""> 
-                <div class="divForm">
-                    <label for="Cantidad">Cantidad</label required>
+                <p>
+                    <input type="text" name="Nombre" placeholder="Nombre" required class="gridNombre">
+                </p>
+                <p>    
+                    <input type="text" name="Apellido" placeholder="Apellido" required class="gridApellido">
+                </p>
+                <p>
+                    <input type="email" name="Correo" placeholder="Correo" required class="gridCorreo"> 
+                </p>
+                <p>
+                    <label for="Cantidad">Cantidad</label>
+                    <input type="number" name="Cantidad" min="1" placeholder="Cantidad" id="cantidad" required class="gridCantidad">    
+                </p>
+                <p>
                     <label for="Categoria">Categoría</label>
-                </div>
-                <div class="divForm">    
-                    <input type="number" name="Cantidad" min="1" placeholder="Cantidad" id="cantidad" required class="">
-                    <select name="Categorias" id="categoria" class="">
+                    <select name="Categorias" id="categoria" required class="gridCategoria">
                         <option value="80">Estudiante</option>
                         <option value="50">Trainee</option>
                         <option value="15">Junior</option>
                     </select>
-                </div>
-                <div id="totalPagar"></div>  
-                <div class="divForm">
-                    <input type="reset" name="Borrar" value="Borrar" class="">
-                    <input type="button" onclick="precioTotal()" name="Resumen" value="Resumen" class="">
-                </div>
+                </p>
+                <p id="totalPagar" class="gridTotal">
+                    Total a Pagar: $
+                </p>  
+                <p>
+                    <input type="reset" name="Borrar" value="Borrar" class="botonVerde gridBorrar">
+                </p>
+                <p>    
+                    <input type="button" onclick="precioTotal()" name="Resumen" value="Resumen" class="botonVerde gridResumen">
+                </p>
             </form>
         </section>
         <footer>

@@ -97,14 +97,41 @@ footer > a{
 h3{
     text-align: center;
 }
+
+/* //////////////////////////////////////////////////////// */
 form{
     display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
 }
-
+input, select{
+    width: 100%;
+    padding: 4px;
+    border-radius: 5px;
+    border: 1px solid #AEB6BF;
+}
+form > p{
+    margin: 5px;
+    width: 75%;
+}
+#totalPagar{
+    background: #2E86C1;
+    border-radius: 5px;
+    height: 40px;
+    padding: 20px;
+    color: #fff;
+    padding-top: 10px;
+}
+.botonVerde{
+    color: #fff;
+    background: #3AB330;
+    border-radius: 5px;
+    border: 1px solid #3AB330;
+}
 
 /* //////////////////////////////////////////////////////// */
 
-@media screen and (min-width: 550px){
+@media screen and (min-width: 700px){
     *{
         font-size: 17px !important;
     }
@@ -132,4 +159,8 @@ form{
     .opcionCat{
         width: 20%;
     }
+    form > p{
+        width: 59%;
+    }
+    
 } 
