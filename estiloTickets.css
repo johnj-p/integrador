@@ -94,12 +94,24 @@ footer > a{
     font-weight: bold;
     text-align: center;
 }
+h3, h4{
+    text-align: center;
+}
 form{
     display: flex;
     margin: 5px;
     flex-flow: column nowrap;
     gap: 7px;
     align-items: center;
+}
+form > div{
+    border: 1px solid #3498DB;
+    background: #3498DB;
+    border-radius: 5px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    padding-left: 20px;
 }
 .inputForm{
     width: 200%;
@@ -141,5 +153,9 @@ form{
     }
     .opcionCat{
         width: 20%;
+    }
+    form > div{
+        width: 200%;
+        height: 30px;
     }
 } 
